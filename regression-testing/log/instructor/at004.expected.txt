@@ -1,0 +1,793 @@
+  state:0.0, ok
+  Welcome! Try test(30)
+->test(30)
+  state:1.0, mode:test, ok
+  Movement:none
+  Sectors:
+    [1,1]->[0,E],-,-,-
+    [1,2]->[-8,*],-,-,-
+    [1,3]->[1,P],-,-,-
+    [1,4]->-,-,-,-
+    [1,5]->[2,P],[3,P],-,-
+    [2,1]->-,-,-,-
+    [2,2]->-,-,-,-
+    [2,3]->[-5,W],-,-,-
+    [2,4]->-,-,-,-
+    [2,5]->[4,P],-,-,-
+    [3,1]->[5,P],[-6,Y],-,-
+    [3,2]->-,-,-,-
+    [3,3]->[-1,O],-,-,-
+    [3,4]->[6,P],[-11,W],-,-
+    [3,5]->-,-,-,-
+    [4,1]->[-2,W],-,-,-
+    [4,2]->[7,P],[-7,*],-,-
+    [4,3]->[8,P],-,-,-
+    [4,4]->[9,P],[-4,*],-,-
+    [4,5]->-,-,-,-
+    [5,1]->[10,P],[-3,W],-,-
+    [5,2]->-,-,-,-
+    [5,3]->[-10,*],-,-,-
+    [5,4]->-,-,-,-
+    [5,5]->[11,P],[-9,W],-,-
+  Descriptions:
+    [-11,W]->
+    [-10,*]->Luminosity:5
+    [-9,W]->
+    [-8,*]->Luminosity:5
+    [-7,*]->Luminosity:5
+    [-6,Y]->Luminosity:2
+    [-5,W]->
+    [-4,*]->Luminosity:5
+    [-3,W]->
+    [-2,W]->
+    [-1,O]->
+    [0,E]->fuel:3/3, life:3/3, landed?:F
+    [1,P]->attached?:F, support_life?:F, visited?:F, turns_left:2
+    [2,P]->attached?:F, support_life?:F, visited?:F, turns_left:2
+    [3,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [4,P]->attached?:F, support_life?:F, visited?:F, turns_left:2
+    [5,P]->attached?:F, support_life?:F, visited?:F, turns_left:1
+    [6,P]->attached?:F, support_life?:F, visited?:F, turns_left:2
+    [7,P]->attached?:F, support_life?:F, visited?:F, turns_left:2
+    [8,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [9,P]->attached?:F, support_life?:F, visited?:F, turns_left:1
+    [10,P]->attached?:F, support_life?:F, visited?:F, turns_left:1
+    [11,P]->attached?:F, support_life?:F, visited?:F, turns_left:2
+  Deaths This Turn:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    E---   *---   P---   ----   PP--   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    ----   ----   W---   ----   P---   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    PY--   ----   O---   PW--   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    W---   P*--   P---   P*--   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    PW--   ----   *---   ----   PW--   
+->status
+  state:1.1, mode:test, ok
+  Explorer status report:Travelling at cruise speed at [1,1,1]
+  Life units left:3, Fuel units left:3
+->move(N)
+  state:2.0, mode:test, ok
+  Movement:
+    [0,E]:[1,1,1]->[5,1,3]
+    [3,P]:[1,5,2]->[5,4,1]
+    [8,P]:[4,3,1]->[3,2,1]
+  Sectors:
+    [1,1]->-,-,-,-
+    [1,2]->[-8,*],-,-,-
+    [1,3]->[1,P],-,-,-
+    [1,4]->-,-,-,-
+    [1,5]->[2,P],-,-,-
+    [2,1]->-,-,-,-
+    [2,2]->-,-,-,-
+    [2,3]->[-5,W],-,-,-
+    [2,4]->-,-,-,-
+    [2,5]->[4,P],-,-,-
+    [3,1]->[5,P],[-6,Y],-,-
+    [3,2]->[8,P],-,-,-
+    [3,3]->[-1,O],-,-,-
+    [3,4]->[6,P],[-11,W],-,-
+    [3,5]->-,-,-,-
+    [4,1]->[-2,W],-,-,-
+    [4,2]->[7,P],[-7,*],-,-
+    [4,3]->-,-,-,-
+    [4,4]->[9,P],[-4,*],-,-
+    [4,5]->-,-,-,-
+    [5,1]->[10,P],[-3,W],[0,E],-
+    [5,2]->-,-,-,-
+    [5,3]->[-10,*],-,-,-
+    [5,4]->[3,P],-,-,-
+    [5,5]->[11,P],[-9,W],-,-
+  Descriptions:
+    [-11,W]->
+    [-10,*]->Luminosity:5
+    [-9,W]->
+    [-8,*]->Luminosity:5
+    [-7,*]->Luminosity:5
+    [-6,Y]->Luminosity:2
+    [-5,W]->
+    [-4,*]->Luminosity:5
+    [-3,W]->
+    [-2,W]->
+    [-1,O]->
+    [0,E]->fuel:2/3, life:3/3, landed?:F
+    [1,P]->attached?:F, support_life?:F, visited?:F, turns_left:1
+    [2,P]->attached?:F, support_life?:F, visited?:F, turns_left:1
+    [3,P]->attached?:F, support_life?:F, visited?:F, turns_left:2
+    [4,P]->attached?:F, support_life?:F, visited?:F, turns_left:1
+    [5,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [6,P]->attached?:F, support_life?:F, visited?:F, turns_left:1
+    [7,P]->attached?:F, support_life?:F, visited?:F, turns_left:1
+    [8,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [9,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [10,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [11,P]->attached?:F, support_life?:F, visited?:F, turns_left:1
+  Deaths This Turn:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    ----   *---   P---   ----   P---   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    ----   ----   W---   ----   P---   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    PY--   P---   O---   PW--   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    W---   P*--   ----   P*--   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    PWE-   ----   *---   P---   PW--   
+->status
+  state:2.1, mode:test, ok
+  Explorer status report:Travelling at cruise speed at [5,1,3]
+  Life units left:3, Fuel units left:2
+->wormhole
+  state:3.0, mode:test, ok
+  Movement:
+    [0,E]:[5,1,3]->[2,2,1]
+    [8,P]:[3,2,1]->[4,3,1]
+    [10,P]:[5,1,1]->[1,5,2]
+  Sectors:
+    [1,1]->-,-,-,-
+    [1,2]->[-8,*],-,-,-
+    [1,3]->[1,P],-,-,-
+    [1,4]->-,-,-,-
+    [1,5]->[2,P],[10,P],-,-
+    [2,1]->-,-,-,-
+    [2,2]->[0,E],-,-,-
+    [2,3]->[-5,W],-,-,-
+    [2,4]->-,-,-,-
+    [2,5]->[4,P],-,-,-
+    [3,1]->[5,P],[-6,Y],-,-
+    [3,2]->-,-,-,-
+    [3,3]->[-1,O],-,-,-
+    [3,4]->[6,P],[-11,W],-,-
+    [3,5]->-,-,-,-
+    [4,1]->[-2,W],-,-,-
+    [4,2]->[7,P],[-7,*],-,-
+    [4,3]->[8,P],-,-,-
+    [4,4]->[9,P],[-4,*],-,-
+    [4,5]->-,-,-,-
+    [5,1]->-,[-3,W],-,-
+    [5,2]->-,-,-,-
+    [5,3]->[-10,*],-,-,-
+    [5,4]->[3,P],-,-,-
+    [5,5]->[11,P],[-9,W],-,-
+  Descriptions:
+    [-11,W]->
+    [-10,*]->Luminosity:5
+    [-9,W]->
+    [-8,*]->Luminosity:5
+    [-7,*]->Luminosity:5
+    [-6,Y]->Luminosity:2
+    [-5,W]->
+    [-4,*]->Luminosity:5
+    [-3,W]->
+    [-2,W]->
+    [-1,O]->
+    [0,E]->fuel:2/3, life:3/3, landed?:F
+    [1,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [2,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [3,P]->attached?:F, support_life?:F, visited?:F, turns_left:1
+    [4,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [5,P]->attached?:T, support_life?:T, visited?:F, turns_left:N/A
+    [6,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [7,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [8,P]->attached?:F, support_life?:F, visited?:F, turns_left:2
+    [9,P]->attached?:T, support_life?:F, visited?:F, turns_left:N/A
+    [10,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [11,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+  Deaths This Turn:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    ----   *---   P---   ----   PP--   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    ----   E---   W---   ----   P---   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    PY--   ----   O---   PW--   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    W---   P*--   P---   P*--   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    -W--   ----   *---   P---   PW--   
+->status
+  state:3.1, mode:test, ok
+  Explorer status report:Travelling at cruise speed at [2,2,1]
+  Life units left:3, Fuel units left:2
+->move(SW)
+  state:4.0, mode:test, ok
+  Movement:
+    [0,E]:[2,2,1]->[3,1,3]
+    [1,P]:[1,3,1]->[2,4,1]
+    [2,P]:[1,5,1]->[2,5,2]
+    [4,P]:[2,5,1]->[2,4,2]
+    [6,P]:[3,4,1]->[2,3,2]
+    [10,P]:[1,5,2]->[2,4,3]
+    [11,P]:[5,5,1]->[5,4,2]
+  Sectors:
+    [1,1]->-,-,-,-
+    [1,2]->[-8,*],-,-,-
+    [1,3]->-,-,-,-
+    [1,4]->-,-,-,-
+    [1,5]->-,-,-,-
+    [2,1]->-,-,-,-
+    [2,2]->-,-,-,-
+    [2,3]->[-5,W],[6,P],-,-
+    [2,4]->[1,P],[4,P],[10,P],-
+    [2,5]->-,[2,P],-,-
+    [3,1]->[5,P],[-6,Y],[0,E],-
+    [3,2]->-,-,-,-
+    [3,3]->[-1,O],-,-,-
+    [3,4]->-,[-11,W],-,-
+    [3,5]->-,-,-,-
+    [4,1]->[-2,W],-,-,-
+    [4,2]->[7,P],[-7,*],-,-
+    [4,3]->[8,P],-,-,-
+    [4,4]->[9,P],[-4,*],-,-
+    [4,5]->-,-,-,-
+    [5,1]->-,[-3,W],-,-
+    [5,2]->-,-,-,-
+    [5,3]->[-10,*],-,-,-
+    [5,4]->[3,P],[11,P],-,-
+    [5,5]->-,[-9,W],-,-
+  Descriptions:
+    [-11,W]->
+    [-10,*]->Luminosity:5
+    [-9,W]->
+    [-8,*]->Luminosity:5
+    [-7,*]->Luminosity:5
+    [-6,Y]->Luminosity:2
+    [-5,W]->
+    [-4,*]->Luminosity:5
+    [-3,W]->
+    [-2,W]->
+    [-1,O]->
+    [0,E]->fuel:3/3, life:3/3, landed?:F
+    [1,P]->attached?:F, support_life?:F, visited?:F, turns_left:1
+    [2,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [3,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [4,P]->attached?:F, support_life?:F, visited?:F, turns_left:2
+    [5,P]->attached?:T, support_life?:T, visited?:F, turns_left:N/A
+    [6,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [7,P]->attached?:T, support_life?:F, visited?:F, turns_left:N/A
+    [8,P]->attached?:F, support_life?:F, visited?:F, turns_left:1
+    [9,P]->attached?:T, support_life?:F, visited?:F, turns_left:N/A
+    [10,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+    [11,P]->attached?:F, support_life?:F, visited?:F, turns_left:0
+  Deaths This Turn:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    ----   *---   ----   ----   ----   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    ----   ----   WP--   PPP-   -P--   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    PYE-   ----   O---   -W--   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    W---   P*--   P---   P*--   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    -W--   ----   *---   PP--   -W--   
+->status
+  state:4.1, mode:test, ok
+  Explorer status report:Travelling at cruise speed at [3,1,3]
+  Life units left:3, Fuel units left:3
+->land
+  state:5.0, mode:test, ok
+  Tranquility base here - we've got a life!
+->status
+  state:5.1, error
+  Negative on that request:no mission in progress.
+->abort
+  state:5.2, error
+  Negative on that request:no mission in progress.
+->status
+  state:5.3, error
+  Negative on that request:no mission in progress.
+->play
+  state:6.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    EW--   *---   P---   ----   P*--   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   P---   P---   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    Y---   ----   O---   P---   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   P---   P*--   ----   P---   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *---   *---   P---   ----   *---   
+->status
+  state:6.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,1,1]
+  Life units left:3, Fuel units left:3
+->move(N)
+  state:7.0, mode:play, ok
+  Movement:
+    [0,E]:[1,1,1]->[5,1,2]
+    [7,P]:[4,2,1]->[3,2,1]
+    [10,P]:[5,3,1]->[4,3,3]
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   P---   ----   P*--   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   P---   P---   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    Y---   P---   O---   P---   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   P---   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *E--   *---   ----   ----   *---   
+->status
+  state:7.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [5,1,2]
+  Life units left:3, Fuel units left:3
+->wormhole
+  state:7.2, mode:play, error
+  Explorer couldn't find wormhole at Sector:5:1
+->status
+  state:7.3, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [5,1,2]
+  Life units left:3, Fuel units left:3
+->move(SW)
+  state:8.0, mode:play, ok
+  Movement:
+    [0,E]:[5,1,2]->[1,5,3]
+    [1,P]:[1,3,1]->[1,4,1]
+    [4,P]:[2,3,1]->[1,4,2]
+    [6,P]:[3,4,1]->[4,5,2]
+    [9,P]:[4,5,1]->[3,5,1]
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   PP--   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   P---   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    Y---   P---   O---   ----   P---   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   -P--   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *---   *---   ----   ----   *---   
+->status
+  state:8.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->land
+  state:8.2, mode:play, error
+  Negative on that request:no yellow dwarf at Sector:1:5
+->status
+  state:8.3, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:9.0, mode:play, ok
+  Movement:
+    [5,P]:[2,4,1]->[3,4,1]
+    [9,P]:[3,5,1]->[4,5,1]
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   PP--   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    Y---   P---   O---   P---   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   PP--   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *---   *---   ----   ----   *---   
+->status
+  state:9.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:10.0, mode:play, ok
+  Movement:
+    [6,P]:[4,5,2]->[4,4,1]
+    [7,P]:[3,2,1]->[3,1,2]
+    [9,P]:[4,5,1]->[5,1,2]
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   PP--   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YP--   ----   O---   P---   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   P---   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *---   ----   ----   *---   
+->status
+  state:10.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:11.0, mode:play, ok
+  Movement:
+    [1,P]:[1,4,1]->[5,5,2]
+    [4,P]:[1,4,2]->[2,4,1]
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   P---   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YP--   ----   O---   P---   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   P---   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *---   ----   ----   *P--   
+->status
+  state:11.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:12.0, mode:play, ok
+  Movement:
+    [5,P]:[3,4,1]->[3,3,2]
+    [6,P]:[4,4,1]->[4,5,1]
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   P---   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YP--   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   P---   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *---   ----   ----   *P--   
+->status
+  state:12.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:13.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   P---   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YP--   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   P---   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *---   ----   ----   *P--   
+->status
+  state:13.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:14.0, mode:play, ok
+  Movement:
+    [4,P]:[2,4,1]->[1,4,1]
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   P---   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YP--   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   P---   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *---   ----   ----   *P--   
+->status
+  state:14.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:15.0, mode:play, ok
+  Movement:
+    [4,P]:[1,4,1]->[2,3,1]
+    [6,P]:[4,5,1]->[4,1,1]
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   P---   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YP--   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    P---   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *---   ----   ----   *P--   
+->status
+  state:15.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:16.0, mode:play, ok
+  Movement:
+    [6,P]:[4,1,1]->[5,2,2]
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   P---   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YP--   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:16.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:17.0, mode:play, ok
+  Movement:
+    [4,P]:[2,3,1]->[3,2,1]
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YP--   P---   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:17.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:18.0, mode:play, ok
+  Movement:
+    [4,P]:[3,2,1]->[4,1,1]
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YP--   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    P---   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:18.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:19.0, mode:play, ok
+  Movement:
+    [4,P]:[4,1,1]->[4,5,1]
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YP--   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   P---   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:19.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:20.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YP--   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   P---   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:20.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:21.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YP--   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   P---   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:21.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:22.0, mode:play, ok
+  Movement:
+    [4,P]:[4,5,1]->[3,1,3]
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YPP-   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:22.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:23.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YPP-   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:23.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:24.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YPP-   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:24.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:25.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YPP-   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:25.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:26.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YPP-   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:26.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:27.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YPP-   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:27.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:28.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YPP-   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:28.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:29.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YPP-   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:29.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:30.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YPP-   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:30.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:31.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YPP-   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
+->status
+  state:31.1, mode:play, ok
+  Explorer status report:Travelling at cruise speed at [1,5,3]
+  Life units left:3, Fuel units left:3
+->pass
+  state:32.0, mode:play, ok
+  Movement:none
+    (1:1)  (1:2)  (1:3)  (1:4)  (1:5)  
+    -W--   *---   ----   ----   P*E-   
+    (2:1)  (2:2)  (2:3)  (2:4)  (2:5)  
+    P*--   *---   ----   ----   ----   
+    (3:1)  (3:2)  (3:3)  (3:4)  (3:5)  
+    YPP-   ----   O---   ----   ----   
+    (4:1)  (4:2)  (4:3)  (4:4)  (4:5)  
+    ----   ----   P*P-   ----   ----   
+    (5:1)  (5:2)  (5:3)  (5:4)  (5:5)  
+    *P--   *P--   ----   ----   *P--   
